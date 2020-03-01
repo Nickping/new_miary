@@ -1,0 +1,601 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2835CA5E69B4A83D0A477E33 /* Pods_MiaryTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9800BF288E152B9E5A0079BA /* Pods_MiaryTests.framework */; };
+		78141088240AAB37003FE0B2 /* Splash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78141087240AAB37003FE0B2 /* Splash.storyboard */; };
+		7814108B240AABDD003FE0B2 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7814108A240AABDD003FE0B2 /* SplashViewController.swift */; };
+		781F0DBF240A75B5004BEA26 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781F0DBE240A75B5004BEA26 /* AppDelegate.swift */; };
+		781F0DC3240A75B5004BEA26 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781F0DC2240A75B5004BEA26 /* ViewController.swift */; };
+		781F0DC6240A75B5004BEA26 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 781F0DC4240A75B5004BEA26 /* Main.storyboard */; };
+		781F0DC8240A75B6004BEA26 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 781F0DC7240A75B6004BEA26 /* Assets.xcassets */; };
+		781F0DCB240A75B6004BEA26 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 781F0DC9240A75B6004BEA26 /* LaunchScreen.storyboard */; };
+		781F0DD6240A75B6004BEA26 /* MiaryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781F0DD5240A75B6004BEA26 /* MiaryTests.swift */; };
+		D7C8EBB5DDA08BD8D5A9F269 /* Pods_Miary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CC18D54F74CF78B23A2AE75 /* Pods_Miary.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		781F0DD2240A75B6004BEA26 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 781F0DB3240A75B4004BEA26 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 781F0DBA240A75B5004BEA26;
+			remoteInfo = Miary;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4CC18D54F74CF78B23A2AE75 /* Pods_Miary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Miary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		78141087240AAB37003FE0B2 /* Splash.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Splash.storyboard; sourceTree = "<group>"; };
+		7814108A240AABDD003FE0B2 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		781F0DBB240A75B5004BEA26 /* Miary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Miary.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		781F0DBE240A75B5004BEA26 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		781F0DC2240A75B5004BEA26 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		781F0DC5240A75B5004BEA26 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		781F0DC7240A75B6004BEA26 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		781F0DCA240A75B6004BEA26 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		781F0DCC240A75B6004BEA26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		781F0DD1240A75B6004BEA26 /* MiaryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MiaryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		781F0DD5240A75B6004BEA26 /* MiaryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiaryTests.swift; sourceTree = "<group>"; };
+		781F0DD7240A75B6004BEA26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		783468DF240A8197008F7410 /* Miary.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Miary.entitlements; sourceTree = "<group>"; };
+		870A5C5608967C3D2FCDD548 /* Pods-Miary.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Miary.release.xcconfig"; path = "Target Support Files/Pods-Miary/Pods-Miary.release.xcconfig"; sourceTree = "<group>"; };
+		9800BF288E152B9E5A0079BA /* Pods_MiaryTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MiaryTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3FBEE8A5DFEE524643D0285 /* Pods-Miary.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Miary.debug.xcconfig"; path = "Target Support Files/Pods-Miary/Pods-Miary.debug.xcconfig"; sourceTree = "<group>"; };
+		D0386002D4F4743B4ADB5DC7 /* Pods-MiaryTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MiaryTests.debug.xcconfig"; path = "Target Support Files/Pods-MiaryTests/Pods-MiaryTests.debug.xcconfig"; sourceTree = "<group>"; };
+		FBB69CD0FC084E72FD280FCB /* Pods-MiaryTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MiaryTests.release.xcconfig"; path = "Target Support Files/Pods-MiaryTests/Pods-MiaryTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		781F0DB8240A75B5004BEA26 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7C8EBB5DDA08BD8D5A9F269 /* Pods_Miary.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		781F0DCE240A75B6004BEA26 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2835CA5E69B4A83D0A477E33 /* Pods_MiaryTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		78141086240AAB1B003FE0B2 /* storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				781F0DC4240A75B5004BEA26 /* Main.storyboard */,
+				781F0DC9240A75B6004BEA26 /* LaunchScreen.storyboard */,
+				78141087240AAB37003FE0B2 /* Splash.storyboard */,
+			);
+			path = storyboards;
+			sourceTree = "<group>";
+		};
+		78141089240AAB62003FE0B2 /* splash */ = {
+			isa = PBXGroup;
+			children = (
+				7814108A240AABDD003FE0B2 /* SplashViewController.swift */,
+			);
+			path = splash;
+			sourceTree = "<group>";
+		};
+		781F0DB2240A75B4004BEA26 = {
+			isa = PBXGroup;
+			children = (
+				781F0DBD240A75B5004BEA26 /* Miary */,
+				781F0DD4240A75B6004BEA26 /* MiaryTests */,
+				781F0DBC240A75B5004BEA26 /* Products */,
+				9DA196E154B7EA404A8ADAC2 /* Pods */,
+				803553E0A366558F0446B015 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		781F0DBC240A75B5004BEA26 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				781F0DBB240A75B5004BEA26 /* Miary.app */,
+				781F0DD1240A75B6004BEA26 /* MiaryTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		781F0DBD240A75B5004BEA26 /* Miary */ = {
+			isa = PBXGroup;
+			children = (
+				78141089240AAB62003FE0B2 /* splash */,
+				78141086240AAB1B003FE0B2 /* storyboards */,
+				783468DF240A8197008F7410 /* Miary.entitlements */,
+				781F0DBE240A75B5004BEA26 /* AppDelegate.swift */,
+				781F0DC2240A75B5004BEA26 /* ViewController.swift */,
+				781F0DC7240A75B6004BEA26 /* Assets.xcassets */,
+				781F0DCC240A75B6004BEA26 /* Info.plist */,
+			);
+			path = Miary;
+			sourceTree = "<group>";
+		};
+		781F0DD4240A75B6004BEA26 /* MiaryTests */ = {
+			isa = PBXGroup;
+			children = (
+				781F0DD5240A75B6004BEA26 /* MiaryTests.swift */,
+				781F0DD7240A75B6004BEA26 /* Info.plist */,
+			);
+			path = MiaryTests;
+			sourceTree = "<group>";
+		};
+		803553E0A366558F0446B015 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4CC18D54F74CF78B23A2AE75 /* Pods_Miary.framework */,
+				9800BF288E152B9E5A0079BA /* Pods_MiaryTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9DA196E154B7EA404A8ADAC2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C3FBEE8A5DFEE524643D0285 /* Pods-Miary.debug.xcconfig */,
+				870A5C5608967C3D2FCDD548 /* Pods-Miary.release.xcconfig */,
+				D0386002D4F4743B4ADB5DC7 /* Pods-MiaryTests.debug.xcconfig */,
+				FBB69CD0FC084E72FD280FCB /* Pods-MiaryTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		781F0DBA240A75B5004BEA26 /* Miary */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 781F0DDA240A75B6004BEA26 /* Build configuration list for PBXNativeTarget "Miary" */;
+			buildPhases = (
+				D3DA8D723BF7EAE362CD817C /* [CP] Check Pods Manifest.lock */,
+				781F0DB7240A75B5004BEA26 /* Sources */,
+				781F0DB8240A75B5004BEA26 /* Frameworks */,
+				781F0DB9240A75B5004BEA26 /* Resources */,
+				D3F10E2704D98FA9C0EC2341 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Miary;
+			productName = Miary;
+			productReference = 781F0DBB240A75B5004BEA26 /* Miary.app */;
+			productType = "com.apple.product-type.application";
+		};
+		781F0DD0240A75B6004BEA26 /* MiaryTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 781F0DDD240A75B6004BEA26 /* Build configuration list for PBXNativeTarget "MiaryTests" */;
+			buildPhases = (
+				5A336F685D30FAE8B2C8B62D /* [CP] Check Pods Manifest.lock */,
+				781F0DCD240A75B6004BEA26 /* Sources */,
+				781F0DCE240A75B6004BEA26 /* Frameworks */,
+				781F0DCF240A75B6004BEA26 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				781F0DD3240A75B6004BEA26 /* PBXTargetDependency */,
+			);
+			name = MiaryTests;
+			productName = MiaryTests;
+			productReference = 781F0DD1240A75B6004BEA26 /* MiaryTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		781F0DB3240A75B4004BEA26 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Euijoon Jung";
+				TargetAttributes = {
+					781F0DBA240A75B5004BEA26 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					781F0DD0240A75B6004BEA26 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 781F0DBA240A75B5004BEA26;
+					};
+				};
+			};
+			buildConfigurationList = 781F0DB6240A75B4004BEA26 /* Build configuration list for PBXProject "Miary" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 781F0DB2240A75B4004BEA26;
+			productRefGroup = 781F0DBC240A75B5004BEA26 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				781F0DBA240A75B5004BEA26 /* Miary */,
+				781F0DD0240A75B6004BEA26 /* MiaryTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		781F0DB9240A75B5004BEA26 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				781F0DCB240A75B6004BEA26 /* LaunchScreen.storyboard in Resources */,
+				781F0DC8240A75B6004BEA26 /* Assets.xcassets in Resources */,
+				781F0DC6240A75B5004BEA26 /* Main.storyboard in Resources */,
+				78141088240AAB37003FE0B2 /* Splash.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		781F0DCF240A75B6004BEA26 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5A336F685D30FAE8B2C8B62D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MiaryTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D3DA8D723BF7EAE362CD817C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Miary-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D3F10E2704D98FA9C0EC2341 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Miary/Pods-Miary-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Miary/Pods-Miary-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Miary/Pods-Miary-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		781F0DB7240A75B5004BEA26 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7814108B240AABDD003FE0B2 /* SplashViewController.swift in Sources */,
+				781F0DC3240A75B5004BEA26 /* ViewController.swift in Sources */,
+				781F0DBF240A75B5004BEA26 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		781F0DCD240A75B6004BEA26 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				781F0DD6240A75B6004BEA26 /* MiaryTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		781F0DD3240A75B6004BEA26 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 781F0DBA240A75B5004BEA26 /* Miary */;
+			targetProxy = 781F0DD2240A75B6004BEA26 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		781F0DC4240A75B5004BEA26 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				781F0DC5240A75B5004BEA26 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		781F0DC9240A75B6004BEA26 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				781F0DCA240A75B6004BEA26 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		781F0DD8240A75B6004BEA26 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		781F0DD9240A75B6004BEA26 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		781F0DDB240A75B6004BEA26 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C3FBEE8A5DFEE524643D0285 /* Pods-Miary.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Miary/Miary.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9HQ4YMXN74;
+				INFOPLIST_FILE = Miary/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.euijoon.miary;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		781F0DDC240A75B6004BEA26 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 870A5C5608967C3D2FCDD548 /* Pods-Miary.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Miary/Miary.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9HQ4YMXN74;
+				INFOPLIST_FILE = Miary/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.euijoon.miary;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		781F0DDE240A75B6004BEA26 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D0386002D4F4743B4ADB5DC7 /* Pods-MiaryTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9HQ4YMXN74;
+				INFOPLIST_FILE = MiaryTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.euijoon.MiaryTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Miary.app/Miary";
+			};
+			name = Debug;
+		};
+		781F0DDF240A75B6004BEA26 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FBB69CD0FC084E72FD280FCB /* Pods-MiaryTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9HQ4YMXN74;
+				INFOPLIST_FILE = MiaryTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.euijoon.MiaryTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Miary.app/Miary";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		781F0DB6240A75B4004BEA26 /* Build configuration list for PBXProject "Miary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				781F0DD8240A75B6004BEA26 /* Debug */,
+				781F0DD9240A75B6004BEA26 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		781F0DDA240A75B6004BEA26 /* Build configuration list for PBXNativeTarget "Miary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				781F0DDB240A75B6004BEA26 /* Debug */,
+				781F0DDC240A75B6004BEA26 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		781F0DDD240A75B6004BEA26 /* Build configuration list for PBXNativeTarget "MiaryTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				781F0DDE240A75B6004BEA26 /* Debug */,
+				781F0DDF240A75B6004BEA26 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 781F0DB3240A75B4004BEA26 /* Project object */;
+}

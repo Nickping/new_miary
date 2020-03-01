@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="v4R-on-HRh">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Splash View Controller-->
+        <scene sceneID="KOS-Fw-S27">
+            <objects>
+                <viewController storyboardIdentifier="SplashViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="v4R-on-HRh" customClass="SplashViewController" customModule="Miary" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="N2I-9x-z1O">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bkground" translatesAutoresizingMaskIntoConstraints="NO" id="sZE-Ot-IZS">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="app_logo_ver2" translatesAutoresizingMaskIntoConstraints="NO" id="Ixf-5Z-eYr">
+                                <rect key="frame" x="157" y="398" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="awY-7I-EUx"/>
+                                    <constraint firstAttribute="height" constant="100" id="qgg-Et-bXX"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Music Diary" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pNk-wa-wFY">
+                                <rect key="frame" x="135" y="518" width="144" height="24"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Miary" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Swu-Xu-OHq">
+                                <rect key="frame" x="178" y="518" width="58" height="26.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="STs-1t-b9c" userLabel="appleLoginView">
+                                <rect key="frame" x="107" y="772" width="200" height="40"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="6fC-wV-91U"/>
+                                    <constraint firstAttribute="height" constant="40" id="x7H-NW-e1g"/>
+                                </constraints>
+                            </view>
+                            <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7TV-BR-Mdv" userLabel="guestLoginView">
+                                <rect key="frame" x="107" y="822" width="200" height="40"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oMo-Sn-LAd">
+                                        <rect key="frame" x="0.0" y="0.0" width="200" height="40"/>
+                                        <state key="normal" title="게스트 로그인하기">
+                                            <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="didTapGeustLogin:" destination="v4R-on-HRh" eventType="touchUpInside" id="ugP-mw-mC5"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="oMo-Sn-LAd" secondAttribute="bottom" id="3Mb-nI-lzL"/>
+                                    <constraint firstItem="oMo-Sn-LAd" firstAttribute="leading" secondItem="7TV-BR-Mdv" secondAttribute="leading" id="IeI-Xi-dn9"/>
+                                    <constraint firstAttribute="width" constant="200" id="PWX-ZP-zLN"/>
+                                    <constraint firstAttribute="height" constant="40" id="Pdj-bg-9Ls"/>
+                                    <constraint firstItem="oMo-Sn-LAd" firstAttribute="top" secondItem="7TV-BR-Mdv" secondAttribute="top" id="hFo-ae-bgs"/>
+                                    <constraint firstAttribute="trailing" secondItem="oMo-Sn-LAd" secondAttribute="trailing" id="kKT-B5-snj"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Swu-Xu-OHq" firstAttribute="top" secondItem="Ixf-5Z-eYr" secondAttribute="bottom" constant="20" id="0bI-8n-c4u"/>
+                            <constraint firstItem="Swu-Xu-OHq" firstAttribute="centerX" secondItem="N2I-9x-z1O" secondAttribute="centerX" id="7Cu-py-o35"/>
+                            <constraint firstItem="7TV-BR-Mdv" firstAttribute="centerX" secondItem="N2I-9x-z1O" secondAttribute="centerX" id="IMI-Rd-l0u"/>
+                            <constraint firstItem="pNk-wa-wFY" firstAttribute="top" secondItem="Ixf-5Z-eYr" secondAttribute="bottom" constant="20" id="LnW-EV-ARS"/>
+                            <constraint firstItem="sZE-Ot-IZS" firstAttribute="top" secondItem="N2I-9x-z1O" secondAttribute="top" id="NX5-6a-Wt2"/>
+                            <constraint firstItem="0cr-Rs-TD6" firstAttribute="bottom" secondItem="STs-1t-b9c" secondAttribute="bottom" constant="50" id="U04-hG-JHM"/>
+                            <constraint firstItem="Ixf-5Z-eYr" firstAttribute="centerX" secondItem="N2I-9x-z1O" secondAttribute="centerX" id="XmF-Gy-GX0"/>
+                            <constraint firstItem="Ixf-5Z-eYr" firstAttribute="centerY" secondItem="N2I-9x-z1O" secondAttribute="centerY" id="fiE-X4-2sy"/>
+                            <constraint firstItem="0cr-Rs-TD6" firstAttribute="bottom" secondItem="sZE-Ot-IZS" secondAttribute="bottom" id="haS-sp-Hzs"/>
+                            <constraint firstItem="sZE-Ot-IZS" firstAttribute="leading" secondItem="0cr-Rs-TD6" secondAttribute="leading" id="lk8-TX-RLg"/>
+                            <constraint firstItem="7TV-BR-Mdv" firstAttribute="top" secondItem="STs-1t-b9c" secondAttribute="bottom" constant="10" id="pMr-sD-pi9"/>
+                            <constraint firstItem="STs-1t-b9c" firstAttribute="centerX" secondItem="N2I-9x-z1O" secondAttribute="centerX" id="w1z-uu-nkN"/>
+                            <constraint firstItem="0cr-Rs-TD6" firstAttribute="trailing" secondItem="sZE-Ot-IZS" secondAttribute="trailing" id="xaz-4D-bbj"/>
+                            <constraint firstItem="pNk-wa-wFY" firstAttribute="centerX" secondItem="N2I-9x-z1O" secondAttribute="centerX" id="zSe-7B-uup"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="0cr-Rs-TD6"/>
+                    </view>
+                    <connections>
+                        <outlet property="appleLoginView" destination="STs-1t-b9c" id="6SB-nL-kn9"/>
+                        <outlet property="backgroundLabel" destination="Swu-Xu-OHq" id="jta-lr-fCa"/>
+                        <outlet property="frontLabel" destination="pNk-wa-wFY" id="9Qc-4v-Nk9"/>
+                        <outlet property="guestLoginView" destination="7TV-BR-Mdv" id="iOC-l3-ZIm"/>
+                        <outlet property="logoImage" destination="Ixf-5Z-eYr" id="bbS-Bs-7vE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ctl-4k-NtD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="152" y="189"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="app_logo_ver2" width="120" height="122"/>
+        <image name="bkground" width="828" height="1472"/>
+    </resources>
+</document>
