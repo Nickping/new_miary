@@ -160,13 +160,57 @@
                     <view key="view" contentMode="scaleToFill" id="UxD-nl-pIw">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oZE-1B-MC1" userLabel="safeAreaCoverView">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9I4-Rd-Thd">
+                                <rect key="frame" x="15" y="54" width="384" height="200"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="plus_btn" translatesAutoresizingMaskIntoConstraints="NO" id="vrr-im-WNX">
+                                        <rect key="frame" x="167" y="75" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="0vi-hS-NOe"/>
+                                            <constraint firstAttribute="height" constant="50" id="tjG-Ih-IKX"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="secondarySystemFillColor" red="0.47058823529999999" green="0.47058823529999999" blue="0.50196078430000002" alpha="0.16" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="vrr-im-WNX" firstAttribute="centerX" secondItem="9I4-Rd-Thd" secondAttribute="centerX" id="4Lf-yY-6tq"/>
+                                    <constraint firstAttribute="height" constant="200" id="Bw7-8z-BH7"/>
+                                    <constraint firstItem="vrr-im-WNX" firstAttribute="centerY" secondItem="9I4-Rd-Thd" secondAttribute="centerY" id="wEL-Bs-suj"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="d54-OM-5RC" firstAttribute="trailing" secondItem="9I4-Rd-Thd" secondAttribute="trailing" constant="15" id="H9m-Xs-PId"/>
+                            <constraint firstItem="d54-OM-5RC" firstAttribute="trailing" secondItem="oZE-1B-MC1" secondAttribute="trailing" id="Qwd-rb-4vy"/>
+                            <constraint firstItem="d54-OM-5RC" firstAttribute="top" secondItem="oZE-1B-MC1" secondAttribute="bottom" id="Vj3-Zp-Ejb"/>
+                            <constraint firstItem="9I4-Rd-Thd" firstAttribute="top" secondItem="oZE-1B-MC1" secondAttribute="bottom" constant="10" id="XvW-BA-CDu"/>
+                            <constraint firstItem="9I4-Rd-Thd" firstAttribute="leading" secondItem="d54-OM-5RC" secondAttribute="leading" constant="15" id="kAN-O7-dA8"/>
+                            <constraint firstItem="oZE-1B-MC1" firstAttribute="leading" secondItem="d54-OM-5RC" secondAttribute="leading" id="pJb-rd-ioh"/>
+                            <constraint firstItem="oZE-1B-MC1" firstAttribute="top" secondItem="UxD-nl-pIw" secondAttribute="top" id="uqO-vT-1Ym"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="d54-OM-5RC"/>
                     </view>
+                    <connections>
+                        <outlet property="addPicturesView" destination="9I4-Rd-Thd" id="GRC-G3-kNL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9l9-nc-lcR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4184" y="122"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="plus_btn" width="76" height="76"/>
+    </resources>
 </document>

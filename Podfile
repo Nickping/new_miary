@@ -10,6 +10,7 @@ target 'Miary' do
     pod 'Alamofire', '~> 4.8'
     pod 'AlamofireObjectMapper', '~> 5.0'
     pod 'RealmSwift'
+
   target 'MiaryTests' do
     inherit! :search_paths
     # Pods for testing

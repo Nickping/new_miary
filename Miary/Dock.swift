@@ -40,21 +40,25 @@ class Dock: UITabBarController {
         let feedItemBarItem = UITabBarItem(title: "feed", image: UIImage(systemName: "book"), tag: 0)
         let playListBarItem = UITabBarItem(title: "playlist", image: UIImage(systemName: "music.note"), tag: 1)
         let profileBarItem = UITabBarItem(title: "profile", image: UIImage(systemName: "person"), tag: 2)
-//        let emtpyBarItem = UITabBarItem(title: "", image: nil, tag: -1)
+        //        let emtpyBarItem = UITabBarItem(title: "", image: nil, tag: -1)
         
         let feedVC = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(identifier: FeedViewController.viewID)
+        let feedVCEmbedded = UINavigationController(rootViewController: feedVC)
+        feedVCEmbedded.setNavigationBarHidden(true, animated: false)
         
         let playListVC = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(identifier: PlayListViewController.viewID)
+        let playListVCEmbedded = UINavigationController(rootViewController: playListVC)
+        playListVCEmbedded.setNavigationBarHidden(true, animated: false)
         
         let profileVC = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(identifier: ProfileViewController.viewID)
+        let profileVCEmbedded = UINavigationController(rootViewController: profileVC)
+        profileVCEmbedded.setNavigationBarHidden(true, animated: false)
         
+        feedVCEmbedded.tabBarItem = feedItemBarItem
+        playListVCEmbedded.tabBarItem = playListBarItem
+        profileVCEmbedded.tabBarItem = profileBarItem
         
-        
-        feedVC.tabBarItem = feedItemBarItem
-        playListVC.tabBarItem = playListBarItem
-        profileVC.tabBarItem = profileBarItem
-        
-        self.viewControllers = [feedVC, playListVC, profileVC]
+        self.viewControllers = [feedVCEmbedded, playListVCEmbedded, profileVCEmbedded]
         self.tabBarController?.tabBar.setItems([feedItemBarItem, playListBarItem, profileBarItem], animated: false)
         
         

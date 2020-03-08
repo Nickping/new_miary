@@ -51,7 +51,10 @@ extension FeedViewController: MNavigationBarDelegate {
     }
     
     func didTapSecondButton() {
+        let feedCreationVC = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(identifier: FeedCreationViewController.viewID) as! FeedCreationViewController
         
+        self.navigationController?.setNavigationBarHidden(false, animated: false)
+        self.navigationController?.pushViewController(feedCreationVC, animated: false)
     }
 }
 
