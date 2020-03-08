@@ -10,6 +10,7 @@ import UIKit
 import AuthenticationServices
 
 @UIApplicationMain
+
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
@@ -18,10 +19,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
 //        Thread.sleep(until: Date.init(timeIntervalSinceNow: 1.5))
         
-        guard let window = self.window, let splashVC = UIStoryboard.init(name: "Splash", bundle: nil).instantiateViewController(identifier: "SplashViewController") as? SplashViewController else { return true }
+//        guard let window = self.window, let splashVC = UIStoryboard.init(name: "Splash", bundle: nil).instantiateViewController(identifier: "SplashViewController") as? SplashViewController else { return true }
+//
+//        self.window?.addSubview(splashVC.view)
         
-        self.window?.addSubview(splashVC.view)
+        let dock = Dock()
         
+        self.window?.rootViewController = dock
 //        let appleIDProvider = ASAuthorizationAppleIDProvider()
 //        appleIDProvider.getCredentialState(forUserID: KeychainItem.currentUserIdentifier) { (credentialState, error) in
 //            switch credentialState {

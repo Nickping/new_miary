@@ -1,43 +1,172 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15508"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Feed View Controller-->
+        <scene sceneID="Nus-LO-W9K">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Miary" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                <viewController storyboardIdentifier="FeedViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="NBr-Ux-UEc" customClass="FeedViewController" customModule="Miary" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="B0V-p7-S9N">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Va-mY-6U0">
-                                <rect key="frame" x="57" y="398" width="300" height="100"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="30q-Bj-RS5" userLabel="safeAreaCoverView">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DAz-Ai-2of" customClass="MNavigationBar" customModule="Miary" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44" width="414" height="100"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="300" id="8qk-Xu-CgS"/>
-                                    <constraint firstAttribute="height" constant="100" id="9FK-rv-MJu"/>
+                                    <constraint firstAttribute="height" constant="100" id="bDs-e9-0I1"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="53L-di-4db" customClass="FeedSortView" customModule="Miary" customModuleProvider="target">
+                                <rect key="frame" x="15" y="794" width="384" height="48"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="7tu-0P-2Eg"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="1Va-mY-6U0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JWr-nu-hVN"/>
-                            <constraint firstItem="1Va-mY-6U0" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="P70-SZ-lOg"/>
+                            <constraint firstItem="4hD-qf-OZr" firstAttribute="top" secondItem="30q-Bj-RS5" secondAttribute="bottom" id="5nL-VZ-tId"/>
+                            <constraint firstItem="30q-Bj-RS5" firstAttribute="leading" secondItem="4hD-qf-OZr" secondAttribute="leading" id="C2L-QZ-5vx"/>
+                            <constraint firstItem="4hD-qf-OZr" firstAttribute="bottom" secondItem="53L-di-4db" secondAttribute="bottom" constant="20" id="GuL-gD-3hT"/>
+                            <constraint firstItem="DAz-Ai-2of" firstAttribute="top" secondItem="30q-Bj-RS5" secondAttribute="bottom" id="HWj-Ye-cOV"/>
+                            <constraint firstItem="30q-Bj-RS5" firstAttribute="top" secondItem="B0V-p7-S9N" secondAttribute="top" id="Mhm-lP-7yu"/>
+                            <constraint firstItem="DAz-Ai-2of" firstAttribute="leading" secondItem="4hD-qf-OZr" secondAttribute="leading" id="U2p-Wx-iij"/>
+                            <constraint firstItem="4hD-qf-OZr" firstAttribute="trailing" secondItem="DAz-Ai-2of" secondAttribute="trailing" id="Uh4-1Z-r0N"/>
+                            <constraint firstItem="53L-di-4db" firstAttribute="leading" secondItem="4hD-qf-OZr" secondAttribute="leading" constant="15" id="apq-KA-aio"/>
+                            <constraint firstItem="4hD-qf-OZr" firstAttribute="trailing" secondItem="53L-di-4db" secondAttribute="trailing" constant="15" id="fop-o1-Svv"/>
+                            <constraint firstAttribute="trailing" secondItem="30q-Bj-RS5" secondAttribute="trailing" id="x6E-om-ik2"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <viewLayoutGuide key="safeArea" id="4hD-qf-OZr"/>
                     </view>
                     <connections>
-                        <outlet property="loginView" destination="1Va-mY-6U0" id="0vc-ed-n9v"/>
+                        <outlet property="feedSortView" destination="53L-di-4db" id="cHj-zI-iMf"/>
+                        <outlet property="navBar" destination="DAz-Ai-2of" id="8QB-kt-ql8"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hje-la-zLS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="139" y="139"/>
+            <point key="canvasLocation" x="1828" y="129"/>
+        </scene>
+        <!--Profile View Controller-->
+        <scene sceneID="zGb-En-AQQ">
+            <objects>
+                <viewController storyboardIdentifier="ProfileViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="257-S6-bad" customClass="ProfileViewController" customModule="Miary" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jjg-wL-7Q2">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h92-KC-KFs" userLabel="safeAreaCoverView">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="TouchID" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="llz-jn-s10">
+                                <rect key="frame" x="40" y="191" width="63" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="z5L-Hd-fU2">
+                                <rect key="frame" x="208" y="186" width="49" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="didChangeTouchIDSettingState:" destination="257-S6-bad" eventType="valueChanged" id="B2h-vL-gNV"/>
+                                </connections>
+                            </switch>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xte-YF-i66" customClass="MNavigationBar" customModule="Miary" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44" width="414" height="100"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="wP6-lz-be4"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Xte-YF-i66" firstAttribute="top" secondItem="h92-KC-KFs" secondAttribute="bottom" id="5hQ-bZ-YxF"/>
+                            <constraint firstItem="h92-KC-KFs" firstAttribute="leading" secondItem="12J-nN-YgH" secondAttribute="leading" id="ABS-3Z-eI7"/>
+                            <constraint firstItem="12J-nN-YgH" firstAttribute="trailing" secondItem="h92-KC-KFs" secondAttribute="trailing" id="CrN-wz-Cas"/>
+                            <constraint firstItem="12J-nN-YgH" firstAttribute="top" secondItem="h92-KC-KFs" secondAttribute="bottom" id="I3u-GH-hWU"/>
+                            <constraint firstItem="h92-KC-KFs" firstAttribute="top" secondItem="jjg-wL-7Q2" secondAttribute="top" id="Wtt-23-HGp"/>
+                            <constraint firstItem="Xte-YF-i66" firstAttribute="leading" secondItem="12J-nN-YgH" secondAttribute="leading" id="ZwQ-wL-X50"/>
+                            <constraint firstItem="12J-nN-YgH" firstAttribute="trailing" secondItem="Xte-YF-i66" secondAttribute="trailing" id="jDR-kp-HOb"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="12J-nN-YgH"/>
+                    </view>
+                    <connections>
+                        <outlet property="navBar" destination="Xte-YF-i66" id="iz4-JX-YSR"/>
+                        <outlet property="touchIDLock" destination="z5L-Hd-fU2" id="TnV-p9-Xlf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kpe-MS-nhq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3433" y="122"/>
+        </scene>
+        <!--Play List View Controller-->
+        <scene sceneID="4Sg-kg-6ET">
+            <objects>
+                <viewController storyboardIdentifier="PlayListViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ehc-Cc-C67" customClass="PlayListViewController" customModule="Miary" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vHY-st-rpZ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZWh-XO-pJf" userLabel="safeAreaCoverView">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1RU-C9-mEE" customClass="MNavigationBar" customModule="Miary" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44" width="414" height="100"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="e6A-fS-4eH"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="khW-W8-U8Q" firstAttribute="trailing" secondItem="1RU-C9-mEE" secondAttribute="trailing" id="6aZ-e2-mFT"/>
+                            <constraint firstItem="ZWh-XO-pJf" firstAttribute="leading" secondItem="khW-W8-U8Q" secondAttribute="leading" id="C2d-dD-vBR"/>
+                            <constraint firstItem="1RU-C9-mEE" firstAttribute="top" secondItem="ZWh-XO-pJf" secondAttribute="bottom" id="JDN-yY-1Jt"/>
+                            <constraint firstItem="ZWh-XO-pJf" firstAttribute="top" secondItem="vHY-st-rpZ" secondAttribute="top" id="Pab-ji-hKN"/>
+                            <constraint firstItem="khW-W8-U8Q" firstAttribute="trailing" secondItem="ZWh-XO-pJf" secondAttribute="trailing" id="nQY-7K-KrN"/>
+                            <constraint firstItem="1RU-C9-mEE" firstAttribute="leading" secondItem="khW-W8-U8Q" secondAttribute="leading" id="sOy-wu-TOG"/>
+                            <constraint firstItem="khW-W8-U8Q" firstAttribute="top" secondItem="ZWh-XO-pJf" secondAttribute="bottom" id="wCz-kw-tc8"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="khW-W8-U8Q"/>
+                    </view>
+                    <connections>
+                        <outlet property="navBar" destination="1RU-C9-mEE" id="KtS-V1-cKg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dez-sY-xCj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2612" y="122"/>
+        </scene>
+        <!--Feed Creation View Controller-->
+        <scene sceneID="zGH-oo-WlP">
+            <objects>
+                <viewController storyboardIdentifier="FeedCreationViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="aFj-fg-hht" customClass="FeedCreationViewController" customModule="Miary" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UxD-nl-pIw">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="d54-OM-5RC"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9l9-nc-lcR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4184" y="122"/>
         </scene>
     </scenes>
 </document>

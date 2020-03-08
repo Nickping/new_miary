@@ -8,14 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		2835CA5E69B4A83D0A477E33 /* Pods_MiaryTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9800BF288E152B9E5A0079BA /* Pods_MiaryTests.framework */; };
+		7801B0D32414E77A009B796E /* MNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7801B0D22414E77A009B796E /* MNavigationBar.swift */; };
+		7801B0D52414E782009B796E /* MNavigationBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7801B0D42414E782009B796E /* MNavigationBar.xib */; };
+		7801B0D824150641009B796E /* FeedCreationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7801B0D724150641009B796E /* FeedCreationViewController.swift */; };
+		7801B0DB241506FE009B796E /* FeedSortView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7801B0DA241506FE009B796E /* FeedSortView.swift */; };
+		7801B0DD24150C49009B796E /* FeedSortView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7801B0DC24150C49009B796E /* FeedSortView.xib */; };
 		78141088240AAB37003FE0B2 /* Splash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78141087240AAB37003FE0B2 /* Splash.storyboard */; };
 		7814108B240AABDD003FE0B2 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7814108A240AABDD003FE0B2 /* SplashViewController.swift */; };
 		781F0DBF240A75B5004BEA26 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781F0DBE240A75B5004BEA26 /* AppDelegate.swift */; };
-		781F0DC3240A75B5004BEA26 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781F0DC2240A75B5004BEA26 /* ViewController.swift */; };
 		781F0DC6240A75B5004BEA26 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 781F0DC4240A75B5004BEA26 /* Main.storyboard */; };
 		781F0DC8240A75B6004BEA26 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 781F0DC7240A75B6004BEA26 /* Assets.xcassets */; };
 		781F0DCB240A75B6004BEA26 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 781F0DC9240A75B6004BEA26 /* LaunchScreen.storyboard */; };
 		781F0DD6240A75B6004BEA26 /* MiaryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781F0DD5240A75B6004BEA26 /* MiaryTests.swift */; };
+		786A025E2414C55E0048C561 /* MusicApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786A025D2414C55E0048C561 /* MusicApi.swift */; };
+		786A02602414C6670048C561 /* MusicModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786A025F2414C6670048C561 /* MusicModel.swift */; };
+		786A02632414CD290048C561 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786A02622414CD290048C561 /* FeedViewController.swift */; };
+		786A02652414D0AE0048C561 /* Dock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786A02642414D0AE0048C561 /* Dock.swift */; };
+		786A02682414D66D0048C561 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786A02672414D66D0048C561 /* ProfileViewController.swift */; };
+		786A026C2414DD770048C561 /* WeatherApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786A026B2414DD770048C561 /* WeatherApi.swift */; };
+		786A02702414DDD90048C561 /* PlayListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786A026F2414DDD90048C561 /* PlayListViewController.swift */; };
+		786A02722414E2910048C561 /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786A02712414E2910048C561 /* FeedViewModel.swift */; };
 		D7C8EBB5DDA08BD8D5A9F269 /* Pods_Miary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CC18D54F74CF78B23A2AE75 /* Pods_Miary.framework */; };
 /* End PBXBuildFile section */
 
@@ -31,11 +43,15 @@
 
 /* Begin PBXFileReference section */
 		4CC18D54F74CF78B23A2AE75 /* Pods_Miary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Miary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7801B0D22414E77A009B796E /* MNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MNavigationBar.swift; sourceTree = "<group>"; };
+		7801B0D42414E782009B796E /* MNavigationBar.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MNavigationBar.xib; sourceTree = "<group>"; };
+		7801B0D724150641009B796E /* FeedCreationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCreationViewController.swift; sourceTree = "<group>"; };
+		7801B0DA241506FE009B796E /* FeedSortView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedSortView.swift; sourceTree = "<group>"; };
+		7801B0DC24150C49009B796E /* FeedSortView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedSortView.xib; sourceTree = "<group>"; };
 		78141087240AAB37003FE0B2 /* Splash.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Splash.storyboard; sourceTree = "<group>"; };
 		7814108A240AABDD003FE0B2 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		781F0DBB240A75B5004BEA26 /* Miary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Miary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		781F0DBE240A75B5004BEA26 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		781F0DC2240A75B5004BEA26 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		781F0DC5240A75B5004BEA26 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		781F0DC7240A75B6004BEA26 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		781F0DCA240A75B6004BEA26 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -44,6 +60,14 @@
 		781F0DD5240A75B6004BEA26 /* MiaryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiaryTests.swift; sourceTree = "<group>"; };
 		781F0DD7240A75B6004BEA26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		783468DF240A8197008F7410 /* Miary.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Miary.entitlements; sourceTree = "<group>"; };
+		786A025D2414C55E0048C561 /* MusicApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicApi.swift; sourceTree = "<group>"; };
+		786A025F2414C6670048C561 /* MusicModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicModel.swift; sourceTree = "<group>"; };
+		786A02622414CD290048C561 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		786A02642414D0AE0048C561 /* Dock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dock.swift; sourceTree = "<group>"; };
+		786A02672414D66D0048C561 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		786A026B2414DD770048C561 /* WeatherApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherApi.swift; sourceTree = "<group>"; };
+		786A026F2414DDD90048C561 /* PlayListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayListViewController.swift; sourceTree = "<group>"; };
+		786A02712414E2910048C561 /* FeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewModel.swift; sourceTree = "<group>"; };
 		870A5C5608967C3D2FCDD548 /* Pods-Miary.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Miary.release.xcconfig"; path = "Target Support Files/Pods-Miary/Pods-Miary.release.xcconfig"; sourceTree = "<group>"; };
 		9800BF288E152B9E5A0079BA /* Pods_MiaryTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MiaryTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3FBEE8A5DFEE524643D0285 /* Pods-Miary.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Miary.debug.xcconfig"; path = "Target Support Files/Pods-Miary/Pods-Miary.debug.xcconfig"; sourceTree = "<group>"; };
@@ -71,6 +95,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7801B0CE2414E6D0009B796E /* common */ = {
+			isa = PBXGroup;
+			children = (
+				7801B0CF2414E6D7009B796E /* views */,
+			);
+			path = common;
+			sourceTree = "<group>";
+		};
+		7801B0CF2414E6D7009B796E /* views */ = {
+			isa = PBXGroup;
+			children = (
+				7801B0D22414E77A009B796E /* MNavigationBar.swift */,
+				7801B0D42414E782009B796E /* MNavigationBar.xib */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		7801B0D9241506CF009B796E /* views */ = {
+			isa = PBXGroup;
+			children = (
+				7801B0DA241506FE009B796E /* FeedSortView.swift */,
+				7801B0DC24150C49009B796E /* FeedSortView.xib */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
 		78141086240AAB1B003FE0B2 /* storyboards */ = {
 			isa = PBXGroup;
 			children = (
@@ -112,13 +162,18 @@
 		781F0DBD240A75B5004BEA26 /* Miary */ = {
 			isa = PBXGroup;
 			children = (
+				7801B0CE2414E6D0009B796E /* common */,
+				786A026E2414DDC90048C561 /* playlist */,
+				786A02662414D6600048C561 /* profile */,
+				786A02612414CD160048C561 /* feed */,
+				786A025C2414C54B0048C561 /* network */,
 				78141089240AAB62003FE0B2 /* splash */,
 				78141086240AAB1B003FE0B2 /* storyboards */,
 				783468DF240A8197008F7410 /* Miary.entitlements */,
 				781F0DBE240A75B5004BEA26 /* AppDelegate.swift */,
-				781F0DC2240A75B5004BEA26 /* ViewController.swift */,
 				781F0DC7240A75B6004BEA26 /* Assets.xcassets */,
 				781F0DCC240A75B6004BEA26 /* Info.plist */,
+				786A02642414D0AE0048C561 /* Dock.swift */,
 			);
 			path = Miary;
 			sourceTree = "<group>";
@@ -130,6 +185,59 @@
 				781F0DD7240A75B6004BEA26 /* Info.plist */,
 			);
 			path = MiaryTests;
+			sourceTree = "<group>";
+		};
+		786A025C2414C54B0048C561 /* network */ = {
+			isa = PBXGroup;
+			children = (
+				786A026D2414DD8A0048C561 /* model */,
+				786A025D2414C55E0048C561 /* MusicApi.swift */,
+				786A026B2414DD770048C561 /* WeatherApi.swift */,
+			);
+			path = network;
+			sourceTree = "<group>";
+		};
+		786A02612414CD160048C561 /* feed */ = {
+			isa = PBXGroup;
+			children = (
+				7801B0D9241506CF009B796E /* views */,
+				786A02622414CD290048C561 /* FeedViewController.swift */,
+				7801B0D724150641009B796E /* FeedCreationViewController.swift */,
+				786A02712414E2910048C561 /* FeedViewModel.swift */,
+			);
+			path = feed;
+			sourceTree = "<group>";
+		};
+		786A02662414D6600048C561 /* profile */ = {
+			isa = PBXGroup;
+			children = (
+				786A02692414DD5F0048C561 /* views */,
+				786A02672414D66D0048C561 /* ProfileViewController.swift */,
+			);
+			path = profile;
+			sourceTree = "<group>";
+		};
+		786A02692414DD5F0048C561 /* views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		786A026D2414DD8A0048C561 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				786A025F2414C6670048C561 /* MusicModel.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		786A026E2414DDC90048C561 /* playlist */ = {
+			isa = PBXGroup;
+			children = (
+				786A026F2414DDD90048C561 /* PlayListViewController.swift */,
+			);
+			path = playlist;
 			sourceTree = "<group>";
 		};
 		803553E0A366558F0446B015 /* Frameworks */ = {
@@ -240,6 +348,8 @@
 				781F0DC8240A75B6004BEA26 /* Assets.xcassets in Resources */,
 				781F0DC6240A75B5004BEA26 /* Main.storyboard in Resources */,
 				78141088240AAB37003FE0B2 /* Splash.storyboard in Resources */,
+				7801B0DD24150C49009B796E /* FeedSortView.xib in Resources */,
+				7801B0D52414E782009B796E /* MNavigationBar.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -321,9 +431,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				786A02722414E2910048C561 /* FeedViewModel.swift in Sources */,
+				7801B0D32414E77A009B796E /* MNavigationBar.swift in Sources */,
+				786A02652414D0AE0048C561 /* Dock.swift in Sources */,
+				786A025E2414C55E0048C561 /* MusicApi.swift in Sources */,
+				7801B0DB241506FE009B796E /* FeedSortView.swift in Sources */,
 				7814108B240AABDD003FE0B2 /* SplashViewController.swift in Sources */,
-				781F0DC3240A75B5004BEA26 /* ViewController.swift in Sources */,
+				786A02602414C6670048C561 /* MusicModel.swift in Sources */,
+				786A02632414CD290048C561 /* FeedViewController.swift in Sources */,
+				786A026C2414DD770048C561 /* WeatherApi.swift in Sources */,
+				786A02682414D66D0048C561 /* ProfileViewController.swift in Sources */,
 				781F0DBF240A75B5004BEA26 /* AppDelegate.swift in Sources */,
+				7801B0D824150641009B796E /* FeedCreationViewController.swift in Sources */,
+				786A02702414DDD90048C561 /* PlayListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -496,6 +616,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
+				musicToken = "eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IkM0V0tENENHREEifQ.eyJpYXQiOjE1ODMwNzcxMDMsImV4cCI6MTU5ODYyOTEwMywiaXNzIjoiOUhRNFlNWE43NCJ9.2j-gZ1oq74c_kLFWg1fr0qu1FFQGMuUVnd77aBxJSRQKkRUIGC_YLHOJ5F7tI8ApDVYoJFKnAZiMfR7YRewTMQ";
 			};
 			name = Debug;
 		};
@@ -516,6 +637,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
+				musicToken = "eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IkM0V0tENENHREEifQ.eyJpYXQiOjE1ODMwNzcxMDMsImV4cCI6MTU5ODYyOTEwMywiaXNzIjoiOUhRNFlNWE43NCJ9.2j-gZ1oq74c_kLFWg1fr0qu1FFQGMuUVnd77aBxJSRQKkRUIGC_YLHOJ5F7tI8ApDVYoJFKnAZiMfR7YRewTMQ";
 			};
 			name = Release;
 		};

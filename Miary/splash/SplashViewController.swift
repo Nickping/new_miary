@@ -10,13 +10,22 @@ import UIKit
 import AuthenticationServices
 
 
+protocol SplashViewControllerDelegate: class {
+    func didLoginWithGuest()
+    func didLogwinWithApple()
+}
+
 class SplashViewController: UIViewController {
 
+    static let viewID = "SplashViewController"
+    
     @IBOutlet weak var guestLoginView: UIView!
     @IBOutlet weak var appleLoginView: UIView!
     @IBOutlet weak var backgroundLabel: UILabel!
     @IBOutlet weak var frontLabel: UILabel!
     @IBOutlet weak var logoImage: UIImageView!
+    
+    weak var delegate: SplashViewControllerDelegate?
     
     static let movingUpLength: CGFloat = 70.0
     override func viewDidLoad() {
@@ -105,6 +114,9 @@ class SplashViewController: UIViewController {
         }
     }
     @IBAction func didTapGeustLogin(_ sender: Any) {
+        
+        didMove(toParent: nil)
+        delegate?.didLoginWithGuest()
     }
 }
 
@@ -116,6 +128,9 @@ extension SplashViewController: ASAuthorizationControllerDelegate {
     
     func authorizationController(controller: ASAuthorizationController, didCompleteWithAuthorization authorization: ASAuthorization) {
         authorization.credential
+        
+        didMove(toParent: nil)
+        delegate?.didLogwinWithApple()
     }
 }
 

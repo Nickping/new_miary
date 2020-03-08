@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FeedSortView" customModule="Miary" customModuleProvider="target">
+            <connections>
+                <outlet property="allSortBtn" destination="78S-kx-Wyn" id="fjp-Yc-sep"/>
+                <outlet property="daySortBtn" destination="d1q-bR-pu5" id="qs6-px-h7g"/>
+                <outlet property="highLightView" destination="dbD-9t-kfD" id="q6u-76-jWV"/>
+                <outlet property="monthSortView" destination="g5c-IP-r2S" id="LwA-uG-jKU"/>
+                <outlet property="stackView" destination="zih-LN-GfU" id="BxK-bI-e3Y"/>
+                <outlet property="wrapperView" destination="Bfg-hX-dYN" id="vdG-mS-4TY"/>
+                <outlet property="yearSortBtn" destination="s1H-ox-zN5" id="jO7-Wd-awb"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clipsSubviews="YES" contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="106"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bfg-hX-dYN" userLabel="wrapperView">
+                    <rect key="frame" x="0.0" y="44" width="414" height="62"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="zih-LN-GfU">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="62"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s1H-ox-zN5">
+                                    <rect key="frame" x="0.0" y="0.0" width="97.5" height="62"/>
+                                    <state key="normal" title="년">
+                                        <color key="titleColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="didTapSortYearBtn:" destination="-1" eventType="touchUpInside" id="gVO-mu-6K9"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g5c-IP-r2S">
+                                    <rect key="frame" x="105.5" y="0.0" width="97.5" height="62"/>
+                                    <state key="normal" title="월">
+                                        <color key="titleColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="didTapSortMonthBtn:" destination="-1" eventType="touchUpInside" id="10Y-ng-PVL"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d1q-bR-pu5">
+                                    <rect key="frame" x="211" y="0.0" width="97.5" height="62"/>
+                                    <state key="normal" title="일">
+                                        <color key="titleColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="didTapSortDayBtn:" destination="-1" eventType="touchUpInside" id="nqd-mm-5IK"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="78S-kx-Wyn">
+                                    <rect key="frame" x="316.5" y="0.0" width="97.5" height="62"/>
+                                    <state key="normal" title="모든 피드">
+                                        <color key="titleColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="didTapSortAllBtn:" destination="-1" eventType="touchUpInside" id="jbc-10-Og5"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                        </stackView>
+                        <view userInteractionEnabled="NO" alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dbD-9t-kfD">
+                            <rect key="frame" x="5" y="5" width="87.5" height="52"/>
+                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="secondarySystemBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="dbD-9t-kfD" secondAttribute="bottom" constant="5" id="1is-SJ-TEC"/>
+                        <constraint firstItem="zih-LN-GfU" firstAttribute="top" secondItem="Bfg-hX-dYN" secondAttribute="top" id="592-sv-LUU"/>
+                        <constraint firstAttribute="bottom" secondItem="zih-LN-GfU" secondAttribute="bottom" id="5we-8i-6I1"/>
+                        <constraint firstItem="dbD-9t-kfD" firstAttribute="width" secondItem="s1H-ox-zN5" secondAttribute="width" constant="-10" id="DTf-m9-ArF"/>
+                        <constraint firstItem="dbD-9t-kfD" firstAttribute="top" secondItem="Bfg-hX-dYN" secondAttribute="top" constant="5" id="K26-TQ-TAv"/>
+                        <constraint firstItem="dbD-9t-kfD" firstAttribute="leading" secondItem="Bfg-hX-dYN" secondAttribute="leading" constant="5" id="V0b-iH-xz7"/>
+                        <constraint firstAttribute="trailing" secondItem="zih-LN-GfU" secondAttribute="trailing" id="WOg-bC-hQk"/>
+                        <constraint firstItem="zih-LN-GfU" firstAttribute="leading" secondItem="Bfg-hX-dYN" secondAttribute="leading" id="w8K-PS-Sol"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" systemColor="secondarySystemBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Bfg-hX-dYN" secondAttribute="trailing" id="19U-iy-Orl"/>
+                <constraint firstItem="Bfg-hX-dYN" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="Dck-1x-o0L"/>
+                <constraint firstItem="Bfg-hX-dYN" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="R6L-kL-cVn"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="top" secondItem="Bfg-hX-dYN" secondAttribute="top" id="ij7-p6-6Dt"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="137.68115942028987" y="-111.16071428571428"/>
+        </view>
+    </objects>
+</document>
