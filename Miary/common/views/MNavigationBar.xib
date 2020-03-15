@@ -20,7 +20,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="baC-U6-ssf">
-                    <rect key="frame" x="10" y="84" width="72" height="52"/>
+                    <rect key="frame" x="10" y="64" width="72" height="72"/>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
@@ -50,7 +50,7 @@
             <constraints>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="Bs3-NC-Wqz" secondAttribute="bottom" constant="10" id="0pT-xp-Yjo"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="rh9-Ni-oQj" secondAttribute="bottom" constant="10" id="31w-WC-WKQ"/>
-                <constraint firstItem="baC-U6-ssf" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="40" id="Nxw-K1-G0P"/>
+                <constraint firstItem="baC-U6-ssf" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="20" id="Nxw-K1-G0P"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="baC-U6-ssf" secondAttribute="bottom" constant="10" id="dgZ-aU-nCp"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="rh9-Ni-oQj" secondAttribute="trailing" constant="10" id="nYm-JL-REz"/>
                 <constraint firstItem="rh9-Ni-oQj" firstAttribute="leading" secondItem="Bs3-NC-Wqz" secondAttribute="trailing" constant="10" id="qmI-nf-js6"/>

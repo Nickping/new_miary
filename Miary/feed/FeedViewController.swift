@@ -12,12 +12,17 @@ class FeedViewController: UIViewController {
 
     static let viewID = "FeedViewController"
     
+    @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var feedSortView: FeedSortView!
     @IBOutlet weak var navBar: MNavigationBar!
+    var viewModel: FeedViewModel?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
+        
+        viewModel = FeedViewModel()
+        viewModel?.delegate = self
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -28,6 +33,15 @@ class FeedViewController: UIViewController {
     private func setupUI() {
         setupNavBar()
         setupFeedSortview()
+        setupCollectionView()
+    }
+    
+    private func setupCollectionView() {
+        collectionView.delegate = self
+        collectionView.dataSource = self
+        
+        collectionView.register(UINib(nibName: FeedView.viewID, bundle: nil), forCellWithReuseIdentifier: FeedView.viewID)
+        
     }
 
     private func setupNavBar() {
@@ -58,18 +72,51 @@ extension FeedViewController: MNavigationBarDelegate {
     }
 }
 
-extension FeedViewController: UITableViewDelegate {
+extension FeedViewController: UICollectionViewDelegate {
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        let transition = scrollView.panGestureRecognizer.translation(in: scrollView.superview)
+        if transition.y > 0 {
+            feedSortView.isHidden = false
+        } else {
+            feedSortView.isHidden = true
+        }
+    }
     
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        let feedDetailVC = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(identifier: FeedDetailViewController.viewID) as! FeedDetailViewController
+        self.navigationController?.setNavigationBarHidden(false, animated: false)
+        self.navigationController?.pushViewController(feedDetailVC, animated: true)
+    }
 }
 
-extension FeedViewController: UITableViewDataSource {
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 0
+extension FeedViewController: UICollectionViewDataSource {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return viewModel?.feeds?.count ?? 0
     }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return UITableViewCell()
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        
+        guard let feedCell = collectionView.dequeueReusableCell(withReuseIdentifier: FeedView.viewID, for: indexPath) as? FeedView,
+        let feedItem = viewModel?.feeds?[indexPath.row] else {
+            return UICollectionViewCell()
+        }
+        
+        feedCell.bindData(feedItem)
+        return feedCell
     }
-    
-    
+}
+
+extension FeedViewController: UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        
+        return CGSize(width: collectionView.bounds.size.width - 20, height: 300)
+    }
+}
+
+
+extension FeedViewController: FeedViewModelDelegate {
+    func didCompleteLoad() {
+        collectionView.reloadData()
+    }
 }

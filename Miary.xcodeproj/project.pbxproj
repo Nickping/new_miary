@@ -20,6 +20,16 @@
 		781F0DC8240A75B6004BEA26 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 781F0DC7240A75B6004BEA26 /* Assets.xcassets */; };
 		781F0DCB240A75B6004BEA26 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 781F0DC9240A75B6004BEA26 /* LaunchScreen.storyboard */; };
 		781F0DD6240A75B6004BEA26 /* MiaryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781F0DD5240A75B6004BEA26 /* MiaryTests.swift */; };
+		783EF3A6241D29AC003E5326 /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783EF3A4241D29AC003E5326 /* FeedView.swift */; };
+		783EF3A7241D29AC003E5326 /* FeedView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 783EF3A5241D29AC003E5326 /* FeedView.xib */; };
+		783EF3A9241D2C15003E5326 /* FeedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783EF3A8241D2C15003E5326 /* FeedItem.swift */; };
+		783EF3AC241D2E8D003E5326 /* RealmDatabaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783EF3AB241D2E8D003E5326 /* RealmDatabaseModel.swift */; };
+		783EF3DC241DF6F8003E5326 /* FeedDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783EF3DB241DF6F8003E5326 /* FeedDetailViewController.swift */; };
+		783EF3E1241E0C78003E5326 /* PlayListSummaryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 783EF3E0241E0C78003E5326 /* PlayListSummaryView.xib */; };
+		783EF3E2241E0F21003E5326 /* PlayListSummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783EF3DD241E0C5B003E5326 /* PlayListSummaryView.swift */; };
+		783EF3E5241E1397003E5326 /* PlayListSummaryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783EF3E3241E1397003E5326 /* PlayListSummaryTableViewCell.swift */; };
+		783EF3E6241E1397003E5326 /* PlayListSummaryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 783EF3E4241E1397003E5326 /* PlayListSummaryTableViewCell.xib */; };
+		783EF3E9241E1527003E5326 /* PlayListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783EF3E8241E1527003E5326 /* PlayListItem.swift */; };
 		786A025E2414C55E0048C561 /* MusicApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786A025D2414C55E0048C561 /* MusicApi.swift */; };
 		786A02602414C6670048C561 /* MusicModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786A025F2414C6670048C561 /* MusicModel.swift */; };
 		786A02632414CD290048C561 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786A02622414CD290048C561 /* FeedViewController.swift */; };
@@ -60,6 +70,16 @@
 		781F0DD5240A75B6004BEA26 /* MiaryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiaryTests.swift; sourceTree = "<group>"; };
 		781F0DD7240A75B6004BEA26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		783468DF240A8197008F7410 /* Miary.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Miary.entitlements; sourceTree = "<group>"; };
+		783EF3A4241D29AC003E5326 /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
+		783EF3A5241D29AC003E5326 /* FeedView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedView.xib; sourceTree = "<group>"; };
+		783EF3A8241D2C15003E5326 /* FeedItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedItem.swift; sourceTree = "<group>"; };
+		783EF3AB241D2E8D003E5326 /* RealmDatabaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmDatabaseModel.swift; sourceTree = "<group>"; };
+		783EF3DB241DF6F8003E5326 /* FeedDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedDetailViewController.swift; sourceTree = "<group>"; };
+		783EF3DD241E0C5B003E5326 /* PlayListSummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayListSummaryView.swift; sourceTree = "<group>"; };
+		783EF3E0241E0C78003E5326 /* PlayListSummaryView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlayListSummaryView.xib; sourceTree = "<group>"; };
+		783EF3E3241E1397003E5326 /* PlayListSummaryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayListSummaryTableViewCell.swift; sourceTree = "<group>"; };
+		783EF3E4241E1397003E5326 /* PlayListSummaryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlayListSummaryTableViewCell.xib; sourceTree = "<group>"; };
+		783EF3E8241E1527003E5326 /* PlayListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayListItem.swift; sourceTree = "<group>"; };
 		786A025D2414C55E0048C561 /* MusicApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicApi.swift; sourceTree = "<group>"; };
 		786A025F2414C6670048C561 /* MusicModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicModel.swift; sourceTree = "<group>"; };
 		786A02622414CD290048C561 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
@@ -117,6 +137,8 @@
 			children = (
 				7801B0DA241506FE009B796E /* FeedSortView.swift */,
 				7801B0DC24150C49009B796E /* FeedSortView.xib */,
+				783EF3A4241D29AC003E5326 /* FeedView.swift */,
+				783EF3A5241D29AC003E5326 /* FeedView.xib */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -162,6 +184,7 @@
 		781F0DBD240A75B5004BEA26 /* Miary */ = {
 			isa = PBXGroup;
 			children = (
+				783EF3AA241D2E65003E5326 /* database */,
 				7801B0CE2414E6D0009B796E /* common */,
 				786A026E2414DDC90048C561 /* playlist */,
 				786A02662414D6600048C561 /* profile */,
@@ -187,6 +210,33 @@
 			path = MiaryTests;
 			sourceTree = "<group>";
 		};
+		783EF3AA241D2E65003E5326 /* database */ = {
+			isa = PBXGroup;
+			children = (
+				783EF3AB241D2E8D003E5326 /* RealmDatabaseModel.swift */,
+			);
+			path = database;
+			sourceTree = "<group>";
+		};
+		783EF3DF241E0C65003E5326 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				783EF3DD241E0C5B003E5326 /* PlayListSummaryView.swift */,
+				783EF3E0241E0C78003E5326 /* PlayListSummaryView.xib */,
+				783EF3E3241E1397003E5326 /* PlayListSummaryTableViewCell.swift */,
+				783EF3E4241E1397003E5326 /* PlayListSummaryTableViewCell.xib */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		783EF3E7241E14EB003E5326 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				783EF3E8241E1527003E5326 /* PlayListItem.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
 		786A025C2414C54B0048C561 /* network */ = {
 			isa = PBXGroup;
 			children = (
@@ -204,6 +254,8 @@
 				786A02622414CD290048C561 /* FeedViewController.swift */,
 				7801B0D724150641009B796E /* FeedCreationViewController.swift */,
 				786A02712414E2910048C561 /* FeedViewModel.swift */,
+				783EF3A8241D2C15003E5326 /* FeedItem.swift */,
+				783EF3DB241DF6F8003E5326 /* FeedDetailViewController.swift */,
 			);
 			path = feed;
 			sourceTree = "<group>";
@@ -235,6 +287,8 @@
 		786A026E2414DDC90048C561 /* playlist */ = {
 			isa = PBXGroup;
 			children = (
+				783EF3E7241E14EB003E5326 /* model */,
+				783EF3DF241E0C65003E5326 /* views */,
 				786A026F2414DDD90048C561 /* PlayListViewController.swift */,
 			);
 			path = playlist;
@@ -344,8 +398,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				783EF3A7241D29AC003E5326 /* FeedView.xib in Resources */,
 				781F0DCB240A75B6004BEA26 /* LaunchScreen.storyboard in Resources */,
 				781F0DC8240A75B6004BEA26 /* Assets.xcassets in Resources */,
+				783EF3E1241E0C78003E5326 /* PlayListSummaryView.xib in Resources */,
+				783EF3E6241E1397003E5326 /* PlayListSummaryTableViewCell.xib in Resources */,
 				781F0DC6240A75B5004BEA26 /* Main.storyboard in Resources */,
 				78141088240AAB37003FE0B2 /* Splash.storyboard in Resources */,
 				7801B0DD24150C49009B796E /* FeedSortView.xib in Resources */,
@@ -431,18 +488,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				783EF3A6241D29AC003E5326 /* FeedView.swift in Sources */,
 				786A02722414E2910048C561 /* FeedViewModel.swift in Sources */,
 				7801B0D32414E77A009B796E /* MNavigationBar.swift in Sources */,
+				783EF3E2241E0F21003E5326 /* PlayListSummaryView.swift in Sources */,
 				786A02652414D0AE0048C561 /* Dock.swift in Sources */,
+				783EF3E5241E1397003E5326 /* PlayListSummaryTableViewCell.swift in Sources */,
 				786A025E2414C55E0048C561 /* MusicApi.swift in Sources */,
 				7801B0DB241506FE009B796E /* FeedSortView.swift in Sources */,
 				7814108B240AABDD003FE0B2 /* SplashViewController.swift in Sources */,
 				786A02602414C6670048C561 /* MusicModel.swift in Sources */,
+				783EF3A9241D2C15003E5326 /* FeedItem.swift in Sources */,
 				786A02632414CD290048C561 /* FeedViewController.swift in Sources */,
+				783EF3AC241D2E8D003E5326 /* RealmDatabaseModel.swift in Sources */,
+				783EF3DC241DF6F8003E5326 /* FeedDetailViewController.swift in Sources */,
 				786A026C2414DD770048C561 /* WeatherApi.swift in Sources */,
 				786A02682414D66D0048C561 /* ProfileViewController.swift in Sources */,
 				781F0DBF240A75B5004BEA26 /* AppDelegate.swift in Sources */,
 				7801B0D824150641009B796E /* FeedCreationViewController.swift in Sources */,
+				783EF3E9241E1527003E5326 /* PlayListItem.swift in Sources */,
 				786A02702414DDD90048C561 /* PlayListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

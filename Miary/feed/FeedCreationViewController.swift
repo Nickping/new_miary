@@ -8,14 +8,13 @@
 
 import UIKit
 import Photos
-import BSImagePicker
 
 class FeedCreationViewController: UIViewController {
 
     @IBOutlet weak var addPicturesView: UIView!
     static let viewID = "FeedCreationViewController"
     
-    private let imagePickerController = ImagePickerController()
+    
     
     
     override func viewDidLoad() {
@@ -50,7 +49,7 @@ class FeedCreationViewController: UIViewController {
         
         let imagePicker = UIImagePickerController()
         imagePicker.modalPresentationStyle = .fullScreen
-        imagePicker.imageExportPreset
+        
         self.present(imagePicker, animated: true, completion: nil)
 //        self.pushViewController(imagePickerController, animated: true)
 //        imagePickerController.sourceType = .photoLibrary
@@ -99,28 +98,4 @@ extension FeedCreationViewController: UIImagePickerControllerDelegate {
 //
 //        self.dismiss(animated: true, completion: nil)
     }
-}
-
-extension FeedCreationViewController: ImagePickerControllerDelegate {
-    func imagePicker(_ imagePicker: ImagePickerController, didSelectAsset asset: PHAsset) {
-        print(asset)
-    }
-    
-    func imagePicker(_ imagePicker: ImagePickerController, didDeselectAsset asset: PHAsset) {
-        print(asset)
-    }
-    
-    func imagePicker(_ imagePicker: ImagePickerController, didFinishWithAssets assets: [PHAsset]) {
-        print(assets)
-    }
-    
-    func imagePicker(_ imagePicker: ImagePickerController, didCancelWithAssets assets: [PHAsset]) {
-        print(assets)
-    }
-    
-    func imagePicker(_ imagePicker: ImagePickerController, didReachSelectionLimit count: Int) {
-        print(count)
-    }
-    
-    
 }
