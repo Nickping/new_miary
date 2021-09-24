@@ -9,13 +9,19 @@ PODS:
   - Realm/Headers (4.3.2)
   - RealmSwift (4.3.2):
     - Realm (= 4.3.2)
-  - RxSwift (5.0.1)
+  - RxCocoa (6.2.0):
+    - RxRelay (= 6.2.0)
+    - RxSwift (= 6.2.0)
+  - RxRelay (6.2.0):
+    - RxSwift (= 6.2.0)
+  - RxSwift (6.2.0)
 
 DEPENDENCIES:
   - Alamofire (~> 4.8)
   - AlamofireObjectMapper (~> 5.0)
   - RealmSwift
-  - RxSwift (~> 5.0)
+  - RxCocoa (~> 6.2)
+  - RxSwift (~> 6.2)
 
 SPEC REPOS:
   trunk:
@@ -24,6 +30,8 @@ SPEC REPOS:
     - ObjectMapper
     - Realm
     - RealmSwift
+    - RxCocoa
+    - RxRelay
     - RxSwift
 
 SPEC CHECKSUMS:
@@ -32,8 +40,10 @@ SPEC CHECKSUMS:
   ObjectMapper: 70187b8941977c62ccfb423caf6b50be405cabf0
   Realm: 5e92902e2875dff4bb0fd02f67bb737c3d5db2bc
   RealmSwift: 9a360fc7bae04fc2e308a34fbd899d5faa2d6b22
-  RxSwift: e2dc62b366a3adf6a0be44ba9f405efd4c94e0c4
+  RxCocoa: 4baf94bb35f2c0ab31bc0cb9f1900155f646ba42
+  RxRelay: e72dbfd157807478401ef1982e1c61c945c94b2f
+  RxSwift: d356ab7bee873611322f134c5f9ef379fa183d8f
 
-PODFILE CHECKSUM: 48e5c1e4da2c3ebc064fb6593c989ec4015c6ee6
+PODFILE CHECKSUM: 6b60f0408b852d693e63d734f53bc7401f2e68e6
 
-COCOAPODS: 1.8.4
+COCOAPODS: 1.10.2

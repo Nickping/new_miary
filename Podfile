@@ -6,7 +6,8 @@ target 'Miary' do
   use_frameworks!
 
   # Pods for Miary
- pod 'RxSwift', '~> 5.0'
+ pod 'RxSwift', '~> 6.2'
+pod 'RxCocoa', '~> 6.2'
     pod 'Alamofire', '~> 4.8'
     pod 'AlamofireObjectMapper', '~> 5.0'
     pod 'RealmSwift'
